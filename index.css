@@ -623,3 +623,63 @@ footer {
 .article-card::before {
   content: '';
   position: absolute;}
+  /* CONTACT CARD */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ITEM */
+.contact-item {
+  display: grid;
+  grid-template-columns: 30px 100px 1fr;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(0, 191, 255, 0.08);
+  transform: translateX(5px);
+}
+
+/* ICON */
+.contact-item i {
+  font-size: 20px;
+}
+
+.whatsapp { color: #25D366; }
+.instagram { color: #E1306C; }
+.discord { color: #7289DA; }
+.email { color: #FF6A00; }
+
+/* LABEL */
+.contact-item span {
+  font-weight: 600;
+  color: #ccc;
+}
+
+/* LINK */
+.contact-item a {
+  color: var(--accent-blue-light);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-item a:hover {
+  color: var(--accent-blue);
+  text-shadow: var(--glow);
+}
+
+/* DISCORD COPY */
+.discord-copy {
+  cursor: pointer;
+}
+
+.discord-copy small {
+  color: #aaa;
+  font-size: 12px;
+}

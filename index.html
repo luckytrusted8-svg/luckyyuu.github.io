@@ -6,6 +6,7 @@
     <title>MyPortofolio</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js"></script>
 </head>
 <body>
    <!-- Navbar -->
@@ -42,7 +43,7 @@
       <a href="#about" class="btn">Selengkapnya →</a>
     </div>
     <div class="hero-image">
-      <img src="foto2.jpeg" alt="Foto Lucky">
+      <img src="images/foto2.jpeg" alt="Foto Lucky">
     </div>
   </section>
 
@@ -110,11 +111,11 @@
     <!-- projek sebelah kiri -->
     <div class="design-projects">
       <div class="project-card">
-        <img src="PosterKonser.jpg" alt="Design 1">
+        <img src="images/PosterKonser.jpg" alt="Design 1">
         <p>- Design Project -</p>
       </div>
       <div class="project-card">
-        <img src="Hamburger.png" alt="Design 2">
+        <img src="images/Hamburger.png" alt="Design 2">
         <p>- Design Project -</p>
       </div>
     </div> 
@@ -124,9 +125,9 @@
       <h3>Gallery Design</h3>
       <h2>Some of <br> My Design <br> Results</h2>
       <p>Beberapa hasil desain <br>  ku, selama kurang lebih <br> belajar desain grafis <br> di Skill Village </p>
-      <a href="https://www.instagram.com/accounts/login/?hl=en" class="see-all">See All</a>
+      <a href="https://www.instagram.com/onlyluxky/?hl=en" class="see-all">See All</a>
       <div class="signature">
-        <img src="logo-lu.jpeg" alt="Logo">
+        <img src="images/logo-lu.jpeg" alt="Logo">
         <span>by: Lucky Ubadiillah</span>
       </div>
     </div>
@@ -137,7 +138,7 @@
 <section id="projects" class="projects-section">
   <div class="projects-container">
     <h2>My Coding Projects</h2>
-    <p>Berikut adalah beberapa proyek coding yang telah saya selesaikan selama proses belajar sebagai web developer, dikembangkan menggunakan Laravel, Filament, MySQL, serta didukung oleh Laragon dan Visual Studio Code.</p>
+    <p>Berikut adalah proyek coding yang telah saya selesaikan selama proses belajar sebagai web developer, dikembangkan menggunakan Laravel, Filament, MySQL, serta didukung oleh Laragon dan Visual Studio Code.</p>
     
     <div class="projects-grid">
       <div class="project-card">
@@ -172,6 +173,11 @@
         CSS
       </div>
       <div class="tool">
+        <i class="fab fa-js" style="color:#f7df1e;"></i>
+        JavaScript
+      </div>
+
+      <div class="tool">
         <i class="fab fa-figma" style="color:red;"></i>
         Figma
       </div>
@@ -191,29 +197,46 @@
   </div>
 <!-- Contact -->
 <section id="contact">
-  <div class="card">
-    <h3>Contact</h3>
-     <p><i class="fab fa-whatsapp" style="color:greenyellow;"></i> 
-       <strong>WhatsApp :</strong> 0895402889544
-    </p>
+<div class="card contact-card">
+  <h3>Contact</h3>
 
-    <p><i class="fab fa-instagram" style="color:palevioletred;"></i> 
-       <strong>Instagram :</strong> onlyluxky
-    </p>
-
-    <p><i class="fab fa-discord" style="color:blueviolet;"></i> 
-       <strong>Discord :</strong> LuckyTrusted12
-    </p>
-
-    <p><i class="fas fa-envelope" style="color:orangered;"></i> 
-       <strong>Email :</strong> luckyubaidillah5@gmail.com
-    </p>
+  <div class="contact-item">
+    <i class="fab fa-whatsapp whatsapp"></i>
+    <span>WhatsApp</span>
+    <a href="https://wa.me/62895402889544" target="_blank">0895-4028-89544</a>
   </div>
-</section>
-</section>
 
+  <div class="contact-item">
+    <i class="fab fa-instagram instagram"></i>
+    <span>Instagram</span>
+    <a href="https://instagram.com/onlyluxky" target="_blank">onlyluxky</a>
+  </div>
+
+  <div class="contact-item discord-copy" onclick="copyDiscord()">
+    <i class="fab fa-discord discord"></i>
+    <span>Discord</span>
+    <small>LuckyTrusted17 (click to copy)</small>
+  </div>
+
+  <div class="contact-item">
+    <i class="fas fa-envelope email"></i>
+    <span>Email</span>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luckyubaidillah5@gmail.com" target="_blank">
+      luckyubaidillah5@gmail.com
+    </a>
+  </div>
+</div>
+
+</section>
+</section>
 <footer>
-  <p>&copy; 2025 MyPortofolio. Dibuat oleh Lucky</p>
+<p>&copy; 2025 MyPortofolio. Dibuat oleh Lucky</p>
 </footer>
+<script>
+function copyDiscord() {
+  navigator.clipboard.writeText("LuckyTrusted17");
+  alert("Username Discord berhasil disalin!");
+}
+</script>
 </body>
 </html>
